@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DJ Ramy Nagy | Playlist</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:#eee;font-family:Cairo,Arial,sans-serif;background:radial-gradient(circle at 10% 5%,rgba(180,140,55,.14),transparent 25%),radial-gradient(circle at 90% 85%,rgba(180,140,55,.10),transparent 28%),#080a0d}
+.wrap{max-width:980px;margin:auto;padding:20px 14px 45px}
+header{text-align:center;border-bottom:1px solid #80602b;padding:8px 0 22px;margin-bottom:22px}
+.logo{width:min(330px,75vw);height:auto;display:block;margin:0 auto 12px;border-radius:4px}
+.phone{display:inline-block;color:#d9b86c;border:1px solid #735729;border-radius:30px;padding:6px 16px;font-weight:600}
+h1{text-align:center;color:#e0bc6b;font-size:27px;margin:0 0 22px}
+.card{border:1px solid #73572b;border-radius:17px;padding:21px;background:linear-gradient(145deg,rgba(22,24,28,.97),rgba(9,11,14,.97));box-shadow:0 12px 40px #0008;margin-bottom:17px}
+.title{color:#e1bd6d;font-size:20px;margin:0 0 14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+label{display:block;color:#d8b66a;font-weight:600;margin-bottom:6px}
+input,textarea{width:100%;background:#101317;color:#fff;border:1px solid #604b27;border-radius:10px;padding:11px;font:inherit}
+input:focus,textarea:focus{outline:none;border-color:#d5b263}
+.list{display:grid;gap:11px}
+.notice{border:1px solid #73572b;border-radius:15px;padding:17px;background:#0c0f13;margin-bottom:17px;line-height:1.9}
+.notice b{color:#dfbb6b}
+button{width:100%;border:0;border-radius:11px;padding:14px;background:linear-gradient(90deg,#9b722b,#d7b365,#9b722b);color:#080808;font:700 18px Cairo;cursor:pointer}
+.footer{text-align:center;color:#888;font-size:12px;margin-top:18px}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.logo{width:min(300px,82vw)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<img class="logo" src="logo.jpeg" alt="Ramy Nagy Event Technical Supplier">
+<div class="phone">☎ 01008911528</div>
+</header>
+
+<h1>تعليمات تنظيم الحفل</h1>
+
+<div class="notice">
+<b>برجاء ترك ترتيب أغاني الـ Playlist للـ DJ حسب أجواء الحفل وتفاعل الفقرات، مع الالتزام الكامل بجميع الأغاني التي يحددها العروسان.</b>
+</div>
+
+<form id="partyForm">
+<section class="card">
+<h2 class="title">بيانات الحفلة</h2>
+<div class="grid">
+<div><label>تاريخ الحفلة</label><input type="date" name="date" required></div>
+<div><label>اسم العريس</label><input name="groom" required></div>
+<div><label>اسم العروسة</label><input name="bride" required></div>
+</div>
+</section>
+
+<section class="card">
+<h2 class="title">تفاصيل ترتيب الحفل</h2>
+<div class="list">
+<div><label>الدخلة الأولى</label><input name="entrance1" placeholder="اسم الأغنية / الزفة"></div>
+<div><label>الاسلوا الأول</label><input name="slow1" placeholder="اسم الأغنية"></div>
+<div><label>الرقصة الأولى بعد الاسلوا</label><input name="dance1" placeholder="اسم الأغنية"></div>
+<div><label>أغنية التورتة</label><input name="cake" placeholder="اسم الأغنية"></div>
+<div><label>الدخلة الثانية</label><input name="entrance2" placeholder="اسم الأغنية / الزفة"></div>
+<div><label>الاسلوا الثاني</label><input name="slow2" placeholder="اسم الأغنية"></div>
+</div>
+</section>
+
+<section class="card">
+<h2 class="title">الفقرات (إن وجد)</h2>
+<div class="list">
+<input name="segment1" placeholder="1 - اسم الفقرة / الأغنية">
+<input name="segment2" placeholder="2 - اسم الفقرة / الأغنية">
+<input name="segment3" placeholder="3 - اسم الفقرة / الأغنية">
+<input name="segment4" placeholder="4 - اسم الفقرة / الأغنية">
+</div>
+</section>
+
+<section class="card">
+<h2 class="title">بعض الأغاني المطلوبة</h2>
+<div class="list">
+<input name="song1" placeholder="الأغنية المطلوبة 1">
+<input name="song2" placeholder="الأغنية المطلوبة 2">
+<input name="song3" placeholder="الأغنية المطلوبة 3">
+<input name="song4" placeholder="الأغنية المطلوبة 4">
+<input name="song5" placeholder="الأغنية المطلوبة 5">
+</div>
+</section>
+
+<div class="notice"><b>يرجى عدم طلب تشغيل أغاني المزامير أو المهرجانات التي تحتوي على ألفاظ غير لائقة أو قد تسيء للضيوف أو تقلل من رقي الحفل.</b></div>
+<div class="notice"><b>سيتم ضبط مستوى صوت الـ DJ بما يتناسب مع القاعة وعدد الحضور، للحفاظ على راحة الضيوف ومنع أي إزعاج أو ضوضاء زائدة.</b></div>
+
+<section class="card">
+<h2 class="title">ملاحظات وطلبات خاصة</h2>
+<textarea name="notes" rows="5" placeholder="اكتب أي ملاحظات إضافية هنا..."></textarea>
+</section>
+
+<button type="submit">إرسال الاختيارات على واتساب</button>
+</form>
+<div class="footer">Ramy Nagy — Event Technical Supplier</div>
+</div>
+
+<script>
+document.getElementById('partyForm').addEventListener('submit',function(e){
+e.preventDefault();
+const f=new FormData(this);
+const labels={
+date:'تاريخ الحفلة',groom:'اسم العريس',bride:'اسم العروسة',
+entrance1:'الدخلة الأولى',slow1:'الاسلوا الأول',dance1:'الرقصة الأولى بعد الاسلوا',
+cake:'أغنية التورتة',entrance2:'الدخلة الثانية',slow2:'الاسلوا الثاني',
+segment1:'الفقرة 1',segment2:'الفقرة 2',segment3:'الفقرة 3',segment4:'الفقرة 4',
+song1:'الأغنية المطلوبة 1',song2:'الأغنية المطلوبة 2',song3:'الأغنية المطلوبة 3',
+song4:'الأغنية المطلوبة 4',song5:'الأغنية المطلوبة 5',notes:'ملاحظات'
+};
+let msg='*Playlist - DJ Ramy Nagy*\n\n';
+for(const [k,v] of f.entries()) if(v&&labels[k]) msg+=`*${labels[k]}:* ${v}\n`;
+window.open('https://wa.me/201008911528?text='+encodeURIComponent(msg),'_blank');
+});
+</script>
+</body>
+</html>
